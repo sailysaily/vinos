@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_30_024553) do
+ActiveRecord::Schema.define(version: 2020_07_31_023513) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,15 @@ ActiveRecord::Schema.define(version: 2020_07_30_024553) do
     t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "winery"
+    t.string "region"
+    t.string "grapes"
+    t.string "type"
+    t.string "wine_style"
+    t.string "food_pairing"
+    t.integer "year"
+    t.text "story"
+    t.string "background_image"
   end
 
 end
