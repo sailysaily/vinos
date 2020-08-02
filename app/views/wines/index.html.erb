@@ -8,10 +8,11 @@
 
 <% @wines.each do |wine| %>
 <h1><%= wine.name %></h1>
+<%= cl_image_tag("#{wine.photo}",
+      width: 120, height: 500) %>
 
 <%end  %>
 
 
-<%= cl_image_tag("8_Years_In_The_Dessert_lwfwkv",
-      width: 120, height: 500) %>
+
 
